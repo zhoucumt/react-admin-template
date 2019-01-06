@@ -9,7 +9,7 @@ class RouterLink extends Component {
                 <div className="silder-children">
                     <div className="logo">
                         <a href="/">
-                            <h1>xxxx项目管理系统</h1>
+                            <h1 className="app-name">xxxx项目管理系统</h1>
                         </a>
                     </div>
 

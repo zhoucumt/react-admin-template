@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import {BrowserRouter as Router} from "react-router-dom";
 import {renderRoutes} from "react-router-config";
 // 引入视图
-import About from "./views/About/router";
-import List from "./views/List/router";
 import RouterLink from "./views/RouterLink";
 import ContnetRouter from "./views/Content/router";
 
