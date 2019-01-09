@@ -6,7 +6,7 @@ import RouterLink from "./views/RouterLink";
 import ContnetRouter from "./views/Content/router";
 
 import './App.less';
-import './setupProxy.js';
+// import './setupProxy.js';
 
 // 合并路由
 const routes = [...ContnetRouter];

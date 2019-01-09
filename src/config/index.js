@@ -8,7 +8,8 @@ export default {
      * @description api请求基础路径
      */
     baseUrl: {
-        dev: 'https://www.easy-mock.com/mock/5be94defd04fbb4e5d598e1b',
+        // dev: 'https://www.easy-mock.com/mock/5be94defd04fbb4e5d598e1b',
+        dev: '/hrm',
         pro: 'https://produce.com'
     },
 

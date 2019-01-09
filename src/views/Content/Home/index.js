@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import api from '../../../api/index.js';
+import api from '@/api/index.js';
 
 class Home extends Component {
     render () {
