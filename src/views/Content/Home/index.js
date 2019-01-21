@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import api from '@/api/index.js';
-import { Button } from 'antd';
+import {Button} from 'antd';
 
 class Home extends Component {
     render () {
