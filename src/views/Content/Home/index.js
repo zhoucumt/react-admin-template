@@ -16,7 +16,7 @@ class Home extends Component {
         api.getBasicData({
         }).then(res => {
             console.log('res: ', res);
-        })
+        });
     }
 }
 
