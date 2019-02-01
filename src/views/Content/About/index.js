@@ -2,7 +2,26 @@ import React, {Component} from 'react';
 import "./index.less";
 
 class About extends Component {
+    constructor(props) {
+        super(props);
+
+        this.onchangeHandler = this.onchangeHandler.bind(this);
+
+        this.state = {
+            inputValue: 'inputValue'
+        };
+    }
+
+    onchangeHandler(e) {
+        this.setState({
+            inputValue: e.target.value
+        });
+    }
+
     render () {
+        const labelText = 'text';
+        const inputValue = this.state.inputValue;
+
         return (
             <div style={{fontSize: '50px'}} className="about-page">
                 <div>About</div>
@@ -24,6 +43,20 @@ class About extends Component {
                 <svg width="300" height="180">
                     <rect x="0" y="0" height="100" width="200" />
                 </svg>
+
+                <input
+                    type="text"
+                    aria-label={labelText}
+                    aria-required="true"
+                    onChange={this.onchangeHandler}
+                    value={inputValue}
+                    name="name"
+                />
+
+                <div>
+                    <label htmlFor="namedInput">Name:</label>
+                    <input id="namedInput" type="text" name="name"/>
+                </div>
             </div>
         );
     }
