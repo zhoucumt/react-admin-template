@@ -10,12 +10,15 @@ class About extends Component {
         this.state = {
             inputValue: 'inputValue'
         };
+
+        this.myRef = React.createRef();
     }
 
     onchangeHandler(e) {
         this.setState({
             inputValue: e.target.value
         });
+        console.log('this.myRef: ', this.myRef.current);
     }
 
     render () {
@@ -24,7 +27,7 @@ class About extends Component {
 
         return (
             <div style={{fontSize: '50px'}} className="about-page">
-                <div>About</div>
+                <div ref={this.myRef}>About</div>
 
                 <svg width="300" height="180">
                     <circle cx="30"  cy="50" r="25" />
