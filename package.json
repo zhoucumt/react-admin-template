@@ -19,12 +19,6 @@
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "devDependencies": {
     "babel-plugin-import": "^1.11.0",
     "http-proxy-middleware": "^0.19.1",
