@@ -8,7 +8,10 @@ class About extends Component {
         this.onchangeHandler = this.onchangeHandler.bind(this);
 
         this.state = {
-            inputValue: 'inputValue'
+            inputValue: 'inputValue',
+            name: status => (
+                <div>aaaa</div>
+            )
         };
 
         this.myRef = React.createRef();
