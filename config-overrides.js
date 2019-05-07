@@ -2,6 +2,7 @@
 const rewireLess = require('react-app-rewire-less');
 const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
+// coI?¬nst html = reque('')
 const {
     override,
     fixBabelImports,
@@ -67,12 +68,12 @@ module.exports = {
             '@': path.join(__dirname, '.', 'src')
         }),
 
-        // 增加webpack插件，打包后去除浏览器console，警搞等
+        // 增加webpack插件，打包后去除浏览器console，warnings等
         addUglifyJsPlugin()
     ),
 
     devServer: (configFunction) => {
-        return function(proxy, allowedHost) {
+        return (proxy, allowedHost) => {
             // 配置代理，便于和不同的后端联调
             const config = configFunction({
                 '/portrait-app': {
