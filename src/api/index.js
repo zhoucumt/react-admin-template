@@ -15,7 +15,8 @@ export default {
      */
     getBasicData(params) {
         return request.request({
-            url: '/get-project-info',
+            // url: '/get-project-info',
+            url: 'project/get-page-project',
             method: 'get',
             params
         });

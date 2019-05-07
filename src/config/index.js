@@ -9,8 +9,8 @@ export default {
      */
     baseUrl: {
         // dev: 'https://www.easy-mock.com/mock/5be94defd04fbb4e5d598e1b',
-        dev: '/hrm',
-        pro: 'https://produce.com'
+        dev: '/portrait-app',
+        pro: '/portrait-app'
     },
 
     homeName: 'home',

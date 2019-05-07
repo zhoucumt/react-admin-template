@@ -75,9 +75,11 @@ module.exports = {
         return function(proxy, allowedHost) {
             // 配置代理，便于和不同的后端联调
             const config = configFunction({
-                '/portrait-front': {
+                '/portrait-app': {
                     changeOrigin: true,
-                    target: 'https://www.easy-mock.com/mock/5be94defd04fbb4e5d598e1b'
+                    // target: 'https://www.easy-mock.com/mock/5be94defd04fbb4e5d598e1b'
+                    // prod
+                    target: 'http://103.28.212.196'
                 }
             }, allowedHost);
 
