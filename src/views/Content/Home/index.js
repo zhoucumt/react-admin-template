@@ -32,6 +32,7 @@ class Home extends Component {
                         onClick={this.focusTextInput}
                     />
                 </div>
+                <div></div>
             </div>
         );
     }
