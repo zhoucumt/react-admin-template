@@ -9,7 +9,8 @@ class Home extends Component {
         super(props);
         this.state = {
             numbers: [0],
-            items: [1, 2, 3]
+            items: [1, 2, 3],
+            text: 'this is a text'
             // items: [{a: 1}, {a: 2}, {a: 3}]
         };
     
@@ -80,6 +81,7 @@ class Home extends Component {
         return (
             <div style={{fontSize: '50px'}}>
                 <h3>Home</h3>
+                <div>{this.state.text}</div>
                 <Button onClick={this.handleClick}>按钮</Button>
                 <ChildComponent numbers={this.state.numbers} />
 
@@ -113,6 +115,9 @@ class Home extends Component {
 
     componentDidMount() {
         console.log('componentDidMount=====');
+        this.setState({
+            text: 'this is a new text'
+        });
         api.getBasicData({
         }).then(res => {
             // console.log('res: ', res);
