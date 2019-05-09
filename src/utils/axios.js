@@ -39,7 +39,7 @@ class HttpRequest {
         })
         // 响应拦截
         instance.interceptors.response.use(res => {
-            console.log('response:', res);
+            // console.log('response:', res);
             let response = res.data;
             // 如果后端不是正常返回的'0000'状态，进入如下逻辑进行处理
             // mrzhou233

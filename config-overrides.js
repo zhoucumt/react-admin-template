@@ -2,7 +2,6 @@
 const rewireLess = require('react-app-rewire-less');
 const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
-// coI?¬nst html = reque('')
 const {
     override,
     fixBabelImports,
@@ -34,19 +33,6 @@ const addUglifyJsPlugin = (opts = {}) => config => {
     }
     return config;
 };
-
-// const addMyPlugin = config => {
-//     config.plugins.push(
-//         new uglifyJsPlugin({
-//             uglifyOptions: {
-//                 compress: {
-//                     drop_console: true
-//                 }
-//             }
-//         })
-//     );
-//     return config;
-// };
 
 module.exports = {
     webpack: override(
@@ -88,4 +74,3 @@ module.exports = {
         };
     }
 };
-

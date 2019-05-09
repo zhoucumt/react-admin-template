@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import pageData from '@/mock';
+// import pageData from '@/mock';
 // import TabFilter from '@/components/TabFilter';
 // import ScreenCondition from '@/components/screenCondition/screenCondition.js';
 
