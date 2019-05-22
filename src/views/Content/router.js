@@ -25,6 +25,12 @@ export const Article = loadable({
     loading: Loading
 });
 
+// cavas学习页面
+export const Canvas = loadable({
+    loader: () => import('./Canvas'),
+    loading: Loading
+});
+
 const routes = [
     {
         path: '/',
@@ -42,6 +48,10 @@ const routes = [
     {
         path: '/topics',
         component: Topics
+    },
+    {
+        path: '/canvas',
+        component: Canvas
     }
 ];
 
