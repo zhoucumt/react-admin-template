@@ -6,7 +6,7 @@
     "antd": "^3.16.6",
     "axios": "^0.18.0",
     "connected-react-router": "^6.1.0",
-    "react": "^16.7.0",
+    "react": "^0.14.9",
     "react-dom": "^16.7.0",
     "react-router-config": "^4.4.0-beta.6",
     "react-router-dom": "^4.3.1",
