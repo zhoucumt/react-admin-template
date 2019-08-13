@@ -1,4 +1,4 @@
-import React, {Component, PureComponent} from 'react';
+import React, {Component} from 'react';
 import ChildComponent from './ChildComponent';
 import api from '@/api/index.js';
 import {Button} from 'antd';
